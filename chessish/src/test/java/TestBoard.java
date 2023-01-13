@@ -13,9 +13,12 @@ import java.util.Set;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
- * Test class for Board functionality
+ * Test class for Board functionality. I'm using JUnit version 5. See
+ * pom.xml in the project root directory for more information. (If you
+ * try this, and the tests run in IntelliJ but not in `maven` from the
+ * command line, make sure you've got the surefire extension in pom.xml.)
  *
- * Surely this isn't enough testing...?
+ * But surely this isn't enough testing...?
  */
 public class TestBoard {
 
@@ -36,6 +39,9 @@ public class TestBoard {
         b = new Board(8, players, pieceTypes);
     }
 
+    /**
+     * JUnit will run @Test-annotated methods as test cases
+     */
     @Test
     public void testEmptySquare() {
         assertTrue(b.pieceAt(new Position(0,0)) == null);
