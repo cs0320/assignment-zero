@@ -1,6 +1,8 @@
 # A First Taste of CSCI 0320
 
-This readme document gives some initial, non-exhaustive advice to those who want to do a bit of preparation for 0320 in the week before the semester starts. This document focuses entirely on Java and OO, not setup of the tools 0320 uses for Java, which is covered in class and at hours in the first week of the course. You can find our setup guide [here](https://docs.google.com/document/d/1gp96MAm-hyR6Is3EBY_KU8x9EH6p8drkL4NlTvbBTj4). 
+This document gives some initial, non-exhaustive advice to those who want to do a bit of preparation for 0320 in the week before the semester starts. This document focuses entirely on Java and OO, not setup of the tools 0320 uses for Java, which is covered in class and at hours in the first week of the course. You can find our setup guide [here](https://docs.google.com/document/d/1gp96MAm-hyR6Is3EBY_KU8x9EH6p8drkL4NlTvbBTj4). 
+
+The semester's [EdStem board](https://edstem.org/us/courses/31923/discussion/) has been enabled. Everyone enrolled and with the course in their cart should have access, although late adds will require a manual button click. _If you have questions related to this assignment, or preparing for 0320 in general, please make them as replies to the Preparing-for-32 post, rather than making a new thread._
 
 ## If you're coming to CSCI 0320 directly from 0190
 
@@ -8,17 +10,17 @@ Students who complete CSCI 0190 may move directly to intermediate and upper-leve
 
 >Many students go on to take 0200 after 0190, especially if they did not have a strong grounding in object-oriented programming prior to starting at Brown.
 
-We suggest taking 0200 before taking 0320. If you plan to move directly from 0190 to 0320, you should be aware that 0320 assumes a baseline familiarity with object-oriented programming in Java. While we do review _some_ OO material, there are many vital ideas that we can't cover, either in class or in gear-up sessions. There is no one assignment, or collection of readings, that can substitute for a full-semester experience in 0200---but for those of you who plan to skip 0200 regardless, the material below can provide some guidance. 
+We strongly suggest taking 0200 before taking 0320. If you plan to move directly from 0190 to 0320, you should be aware that 0320 assumes a baseline familiarity with object-oriented programming in Java. While we do review _some_ OO material, there are many vital ideas that we can't cover, either in class or in gear-up sessions. There is no one assignment, or collection of readings, that can substitute for a full-semester experience in 0200---but for those of you who plan to skip 0200 regardless, the material below can provide some guidance. 
 
 ## Readings
 
-We strongly suggest making use of the support material that 0320 provides, especially access to Joshua Bloch's _Effective Java (3e)_, which is available online via Brown's library. _Effective Java_ is not a "Java textbook"---you might consult 0200's lecture notes for that purpose. Rather, it's a series of focused OO design tips written by one of Java's authors; some are Java-specific, but often they even contain useful wisdom for OO programming outside Java. 
+CSCI 0320 provides access to Joshua Bloch's _Effective Java (3e)_, which is available online via Brown's library. _Effective Java_ is not a "Java textbook"; you might consult 0200's lecture notes for that purpose. Rather, it's a series of focused OO design tips written by one of Java's authors; some are Java-specific, but often they even contain useful wisdom for OO programming outside Java. 
 
 You should be able to access the book in two steps. 
 * Navigate [here](https://www.oreilly.com/library/view/temporary-access/) to setup your Brown-affiliated account. Select "Brown University" and log in---note this login is Brown-managed.
 * Access the online reading [here](https://www.oreilly.com/library/view/effective-java-3rd/9780134686097/). Either click "Continue" or use the table-of-contents menu in the upper-right corner of the screen to begin.
 
-Here is a non-exhaustive list of readings in _Effective Java_ that will be useful in adopting the "0320 mindset" when it comes to OO programming early in the semester. Some of these will be assigned reading for everyone, but we suggest getting an understanding of the core point of all of these.
+Here is a (non-exhaustive) list of readings in _Effective Java_ that will be useful in adopting the "0320 mindset" when it comes to OO programming early in the semester. Some of these will be assigned reading for everyone, but we suggest getting an understanding of the core point of all of these. (Some reading is better than none!)
 
 * Encapsulation 
   * Item 15: Minimize the accessibility of classes and members
@@ -43,10 +45,10 @@ Here is a non-exhaustive list of readings in _Effective Java_ that will be usefu
   * A: No. The lessons you learned about functional programming in 0170, 0190 or 0200 will still be useful. E.g., Java has supported lambdas for quite some time. (See Item 42 in _Effective Java_.) The difference is that you'll need to learn _more_ concepts to program with objects and do it well.
 
 * Q: Will you provide us with solutions to this (and other) assignments?
-  * A: 0320 is a different sort of course. You're moving into a larger world, where there's almost always no perfect solution, especially when it comes to OO design. We'll review candidate sprint solutions in class, but the code reviewed will almost always have _both_ weaknesses and strengths. We won't be releasing a "solution" to the assignment zero prompt below.
+  * A: 0320 is a different sort of course. You're moving into a larger world, where there's almost always no perfect solution, especially when it comes to OO design. We'll review candidate sprint solutions in class, but the code reviewed will almost always have _both_ weaknesses and strengths. We won't be releasing a "solution" to the assignment-zero prompt below.
  
 * Q: What's the deal with grading, mandatory S/NC, and collaboration? 
-  * A: While the 2023 syllabus isn't finalized, you can see some of 0320's philosophy in [last semester's syllabus](https://docs.google.com/document/d/1EkgvdBmDfqNhp4gPwG2PVys8lqqsrEmQp-9U8IX-DUc). Yes, you'll be free to share your code (indeed, required to do so at times.) Yes, we'll be requiring you to follow professional standards about doing so.
+  * A: While the 2023 syllabus isn't finalized, you can see some of 0320's philosophy in [last semester's syllabus](https://docs.google.com/document/d/1EkgvdBmDfqNhp4gPwG2PVys8lqqsrEmQp-9U8IX-DUc). Yes, you'll be free to share (even required to share) your code. Yes, we'll be requiring you to follow professional standards about doing so.
 
 ## Assignment Zero
 
@@ -54,11 +56,13 @@ Here is a non-exhaustive list of readings in _Effective Java_ that will be usefu
 
 This existing code is somewhat more complex than you'll write for the first assignment (CSV), and roughly the same complexity as the code you'll write for the third assignment (Server). It's an intermediate stage in my (Tim's) effort to author a chess program. Actually, that's not quite right; if it was only meant to play chess, it wouldn't need to be this complex. Instead, we're trying to make a codebase that can handle _many_ similar, but different, games. 
 
-In the past, you've probably focused mostly on writing code that is _fit for a purpose_. It satisfies the assignment spec, or does what you need at the moment. You might have also tried to write code that is _easy to understand_ or _free from bugs_. In 0320, we'll write code that is also _safe from external bugs_ and _ready for change or extension_. When I (Tim) wrote this code, I was thinking mostly about extensibility. If I shared my code with someone, could they easily extend it to play Go as well? 
+In the past, you've probably focused on writing code that is _fit for a purpose_. It satisfies the assignment spec, or does what you need at the moment. You might have also tried to write code that is _easy to understand_ or _free from bugs_. In 0320, we'll write code that is also _resilient against external bugs_ and _ready for change or extension_. When I (Tim) wrote this code, I was thinking mostly about extensibility and safety. If I shared my code with someone, could they easily extend it to play Go as well? 
 
 ### Baseline Requirements
 
-You are allowed to modify this starter code in any way you wish. You may change the classes I wrote, add new classes, new `main` methods as alternative starting points, etc. 
+_This is an exploratory exercise_, meant to help you understand the "0320 mindset" better, and reinforce your OO-programming skills. The starter code is incomplete and imperfect, although it can be run. 
+
+You may modify this starter code in any way you wish. E.g., you may change the classes I wrote, add new classes, new `main` methods as alternative starting points, etc. 
 
 ### Requirements
 
@@ -66,7 +70,16 @@ There are three parts to this assignment.
 
 #### Code Walk
 
-First, run a game of (pawns-only) chess without changing the code. (Run `ChessGameMain.java`.) Then look through the code. What do you notice that might be new or different? What questions do you have? (It's OK not to understand everything. Part of this assignment is about noticing that and identifying questions.) **Keep a record of these questions.**
+First, run a game of (pawns-only) chess without changing the code. (Run `ChessGameMain.java`.) Then look through the code. What do you notice that might be new or different? What questions do you have, and which can you answer yourself? (It's OK not to understand everything. Part of this assignment is about noticing that and identifying questions.) **Keep a record of these questions.** 
+
+As an example of what I mean, here are some starter questions for you to investigate:
+* Why does the `Pawn` piece type only return possible moves, rather than actually making any of those moves?
+* The `IllegalAction` custom exception stores a `Position` as well as a message, and comments suggest that this is to ease debugging. Why? 
+* Which assumptions about the game does the code make? (Try to express essential constraints, like "the board is two-dimensional", that might be difficult to remove in future versions.)
+* Why does the `Action` interface, `Move` class, etc. exist, when a chess move can always be represented by a pair of locations?
+* What design choices in this code make you nervous? Can you concretely explain what your concerns are?
+
+It is vital for you to understand that, although the above questions may have reasonable answers, the design choices in the starter code do contain flaws (as most code does). It is also vital to ask other questions of your own. The goal of this exercise is not to teach you a list of "Java tricks" to always follow, but to give you practice thinking about design.
 
 #### Testing
 
@@ -78,6 +91,8 @@ Finally, extend the codebase in some way. Here are two suggested paths:
 * You might add another chess piece---I only coded the logic for pawns. This would probably be another class, just like `Pawn`, that describes how that new piece moves.
 * You might leave chess behind, and see if you can use this codebase to run a game of Go instead. There, you'd also need a new piece type, but a `Move` is probably not what you want---once placed, Go pieces can be captured but not moved. What assumptions am I making that could interfere with playing Go? Is there another `Action` type that would work better? 
 
-### Handing In
+### Handing In (Spring 2023)
 
-_This semester_, we do not have the TA capacity to grade your solutions to assignment zero. However, to prevent overlap of effort with the first "real" assignment in 0320, we consider this "due" on January 26th (the first day of 0320).
+_This semester_, we do not have the TA capacity to grade your solutions to assignment zero. We also understand that you don't have the entire break to work on this. However, to prevent overlap of effort with the first "real" assignment in 0320, _we consider this "due" on January 26th (the first day of 0320)_. Even if you can't do everything above, some is better than none.
+
+We're collecting your brief written responses to the above prompts via [this Google form](https://forms.gle/BxvuvFmin8enJpnf8). 
